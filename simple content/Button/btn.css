@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#50494c;
+    font-family:  sans-serif;
+}
+.typewriter h1 {
+    color: #fff;
+    padding-top: 5em;
+    text-align: center;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .0s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background:#fff ;
+    border-radius: 30px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.5),0 0 0 4px #b4004e;
+
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    display:block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    color: rgb(75, 97, 90);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 20px;
+    box-shadow: inset 0 5px 10px rgba(0 ,0,1, .1),0 2px 5px rgba(0,0,0,.5);
+
+    
+}
+ul li:first-child a
+{
+    border-radius: 20px 0 0 20px;
+}
+ul li:last-child a
+{
+    border-radius: 0 20px 20px 0;
+}
+ul li a.active,
+ul li a:hover{
+    background: #ff006a;
+    color: #fff;
+}
+
